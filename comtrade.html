@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Reference &#8212; python-comtrade`</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html">python-comtrade`</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">API Reference</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="api-reference">
+<h1>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="comtrade.Cfg">
+<em class="property">class </em><code class="sig-prename descclassname">comtrade.</code><code class="sig-name descname">Cfg</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#comtrade.Cfg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses and stores Comtrade’s CFG data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><a class="reference internal" href="#comtrade.Cfg.analog_channels" title="comtrade.Cfg.analog_channels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analog_channels</span></code></a></dt><dd><p>Return the analog channels list with complete channel description.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.analog_count" title="comtrade.Cfg.analog_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analog_count</span></code></a></dt><dd><p>Return the number of analog channels.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.channels_count" title="comtrade.Cfg.channels_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels_count</span></code></a></dt><dd><p>Return the number of channels, total.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.digital_channels" title="comtrade.Cfg.digital_channels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">digital_channels</span></code></a></dt><dd><p>Returns the status channels bidimensional values list.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.digital_count" title="comtrade.Cfg.digital_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">digital_count</span></code></a></dt><dd><p>Returns the number of status channels.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.frequency" title="comtrade.Cfg.frequency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">frequency</span></code></a></dt><dd><p>Return the measured line frequency in Hertz.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.ft" title="comtrade.Cfg.ft"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ft</span></code></a></dt><dd><p>Return the expected DAT file format.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.nrates" title="comtrade.Cfg.nrates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nrates</span></code></a></dt><dd><p>Return the number of different sample rates within the DAT file.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.rec_dev_id" title="comtrade.Cfg.rec_dev_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rec_dev_id</span></code></a></dt><dd><p>Return the recording device id.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.rev_year" title="comtrade.Cfg.rev_year"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rev_year</span></code></a></dt><dd><p>Return the COMTRADE revision year.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.sample_rates" title="comtrade.Cfg.sample_rates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sample_rates</span></code></a></dt><dd><p>Return a list with pairs describing the number of samples for a given sample rate.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.start_timestamp" title="comtrade.Cfg.start_timestamp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">start_timestamp</span></code></a></dt><dd><p>Return the recording start time stamp as a datetime object.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.station_name" title="comtrade.Cfg.station_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">station_name</span></code></a></dt><dd><p>Return the recording device’s station name.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.status_channels" title="comtrade.Cfg.status_channels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">status_channels</span></code></a></dt><dd><p>Return the status channels list with complete channel description.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.status_count" title="comtrade.Cfg.status_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">status_count</span></code></a></dt><dd><p>Return the number of status channels.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.time_base" title="comtrade.Cfg.time_base"><code class="xref py py-obj docutils literal notranslate"><span class="pre">time_base</span></code></a></dt><dd><p>Return the time base.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.timemult" title="comtrade.Cfg.timemult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timemult</span></code></a></dt><dd><p>Return the DAT time multiplier (Default = 1).</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.timestamp_critical" title="comtrade.Cfg.timestamp_critical"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timestamp_critical</span></code></a></dt><dd><p>Returns whether the DAT file must contain non-zero timestamp values.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Cfg.trigger_timestamp" title="comtrade.Cfg.trigger_timestamp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trigger_timestamp</span></code></a></dt><dd><p>Return the trigger time stamp as a datetime object.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#comtrade.Cfg.load" title="comtrade.Cfg.load"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load</span></code></a>(filepath)</p></td>
+<td><p>Load and read a CFG file contents.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#comtrade.Cfg.read" title="comtrade.Cfg.read"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read</span></code></a>(cfg_lines)</p></td>
+<td><p>Read CFG-format data of a FileIO or StringIO object.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt id="comtrade.Cfg.analog_channels">
+<em class="property">property </em><code class="sig-name descname">analog_channels</code><a class="headerlink" href="#comtrade.Cfg.analog_channels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the analog channels list with complete channel description.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.analog_count">
+<em class="property">property </em><code class="sig-name descname">analog_count</code><a class="headerlink" href="#comtrade.Cfg.analog_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of analog channels.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.channels_count">
+<em class="property">property </em><code class="sig-name descname">channels_count</code><a class="headerlink" href="#comtrade.Cfg.channels_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of channels, total.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.digital_channels">
+<em class="property">property </em><code class="sig-name descname">digital_channels</code><a class="headerlink" href="#comtrade.Cfg.digital_channels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the status channels bidimensional values list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.digital_count">
+<em class="property">property </em><code class="sig-name descname">digital_count</code><a class="headerlink" href="#comtrade.Cfg.digital_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the number of status channels.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.frequency">
+<em class="property">property </em><code class="sig-name descname">frequency</code><a class="headerlink" href="#comtrade.Cfg.frequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the measured line frequency in Hertz.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.ft">
+<em class="property">property </em><code class="sig-name descname">ft</code><a class="headerlink" href="#comtrade.Cfg.ft" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the expected DAT file format.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filepath</span></em><span class="sig-paren">)</span><a class="headerlink" href="#comtrade.Cfg.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load and read a CFG file contents.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.nrates">
+<em class="property">property </em><code class="sig-name descname">nrates</code><a class="headerlink" href="#comtrade.Cfg.nrates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of different sample rates within the DAT file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.read">
+<code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cfg_lines</span></em><span class="sig-paren">)</span><a class="headerlink" href="#comtrade.Cfg.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read CFG-format data of a FileIO or StringIO object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.rec_dev_id">
+<em class="property">property </em><code class="sig-name descname">rec_dev_id</code><a class="headerlink" href="#comtrade.Cfg.rec_dev_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the recording device id.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.rev_year">
+<em class="property">property </em><code class="sig-name descname">rev_year</code><a class="headerlink" href="#comtrade.Cfg.rev_year" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the COMTRADE revision year.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.sample_rates">
+<em class="property">property </em><code class="sig-name descname">sample_rates</code><a class="headerlink" href="#comtrade.Cfg.sample_rates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list with pairs describing the number of samples for a given
+sample rate.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.start_timestamp">
+<em class="property">property </em><code class="sig-name descname">start_timestamp</code><a class="headerlink" href="#comtrade.Cfg.start_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the recording start time stamp as a datetime object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.station_name">
+<em class="property">property </em><code class="sig-name descname">station_name</code><a class="headerlink" href="#comtrade.Cfg.station_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the recording device’s station name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.status_channels">
+<em class="property">property </em><code class="sig-name descname">status_channels</code><a class="headerlink" href="#comtrade.Cfg.status_channels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the status channels list with complete channel description.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.status_count">
+<em class="property">property </em><code class="sig-name descname">status_count</code><a class="headerlink" href="#comtrade.Cfg.status_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of status channels.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.time_base">
+<em class="property">property </em><code class="sig-name descname">time_base</code><a class="headerlink" href="#comtrade.Cfg.time_base" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the time base.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.timemult">
+<em class="property">property </em><code class="sig-name descname">timemult</code><a class="headerlink" href="#comtrade.Cfg.timemult" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the DAT time multiplier (Default = 1).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.timestamp_critical">
+<em class="property">property </em><code class="sig-name descname">timestamp_critical</code><a class="headerlink" href="#comtrade.Cfg.timestamp_critical" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns whether the DAT file must contain non-zero
+timestamp values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Cfg.trigger_timestamp">
+<em class="property">property </em><code class="sig-name descname">trigger_timestamp</code><a class="headerlink" href="#comtrade.Cfg.trigger_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the trigger time stamp as a datetime object.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="comtrade.Comtrade">
+<em class="property">class </em><code class="sig-prename descclassname">comtrade.</code><code class="sig-name descname">Comtrade</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#comtrade.Comtrade" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses and stores Comtrade data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><a class="reference internal" href="#comtrade.Comtrade.analog" title="comtrade.Comtrade.analog"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analog</span></code></a></dt><dd><p>Return the analog channel values bidimensional list.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.analog_channel_ids" title="comtrade.Comtrade.analog_channel_ids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analog_channel_ids</span></code></a></dt><dd><p>Returns the analog channels name list.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.analog_count" title="comtrade.Comtrade.analog_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analog_count</span></code></a></dt><dd><p>Return the number of analog channels.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.analog_phases" title="comtrade.Comtrade.analog_phases"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analog_phases</span></code></a></dt><dd><p>Returns the analog phase name list.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.cfg" title="comtrade.Comtrade.cfg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cfg</span></code></a></dt><dd><p>Return the underlying CFG class instance.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.channels_count" title="comtrade.Comtrade.channels_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels_count</span></code></a></dt><dd><p>Return the number of channels, total.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.digital" title="comtrade.Comtrade.digital"><code class="xref py py-obj docutils literal notranslate"><span class="pre">digital</span></code></a></dt><dd><p>Returns the status channels bidimensional values list.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.digital_channel_ids" title="comtrade.Comtrade.digital_channel_ids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">digital_channel_ids</span></code></a></dt><dd><p>Returns the status channels name list.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.digital_count" title="comtrade.Comtrade.digital_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">digital_count</span></code></a></dt><dd><p>Returns the number of status channels.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.frequency" title="comtrade.Comtrade.frequency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">frequency</span></code></a></dt><dd><p>Return the measured line frequency in Hertz.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.ft" title="comtrade.Comtrade.ft"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ft</span></code></a></dt><dd><p>Return the expected DAT file format.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.hdr" title="comtrade.Comtrade.hdr"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hdr</span></code></a></dt><dd><p>Return the HDR file contents.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.inf" title="comtrade.Comtrade.inf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">inf</span></code></a></dt><dd><p>Return the INF file contents.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.rec_dev_id" title="comtrade.Comtrade.rec_dev_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rec_dev_id</span></code></a></dt><dd><p>Return the recording device id.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.rev_year" title="comtrade.Comtrade.rev_year"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rev_year</span></code></a></dt><dd><p>Return the COMTRADE revision year.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.start_timestamp" title="comtrade.Comtrade.start_timestamp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">start_timestamp</span></code></a></dt><dd><p>Return the recording start time stamp as a datetime object.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.station_name" title="comtrade.Comtrade.station_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">station_name</span></code></a></dt><dd><p>Return the recording device’s station name.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.status" title="comtrade.Comtrade.status"><code class="xref py py-obj docutils literal notranslate"><span class="pre">status</span></code></a></dt><dd><p>Return the status channel values bidimensional list.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.status_channel_ids" title="comtrade.Comtrade.status_channel_ids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">status_channel_ids</span></code></a></dt><dd><p>Returns the status channels name list.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.status_count" title="comtrade.Comtrade.status_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">status_count</span></code></a></dt><dd><p>Return the number of status channels.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.status_phases" title="comtrade.Comtrade.status_phases"><code class="xref py py-obj docutils literal notranslate"><span class="pre">status_phases</span></code></a></dt><dd><p>Returns the status phase name list.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.time" title="comtrade.Comtrade.time"><code class="xref py py-obj docutils literal notranslate"><span class="pre">time</span></code></a></dt><dd><p>Return the time values list.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.time_base" title="comtrade.Comtrade.time_base"><code class="xref py py-obj docutils literal notranslate"><span class="pre">time_base</span></code></a></dt><dd><p>Return the time base.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.total_samples" title="comtrade.Comtrade.total_samples"><code class="xref py py-obj docutils literal notranslate"><span class="pre">total_samples</span></code></a></dt><dd><p>Return the total number of samples (per channel).</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.trigger_time" title="comtrade.Comtrade.trigger_time"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trigger_time</span></code></a></dt><dd><p>Return relative trigger time in seconds.</p>
+</dd>
+<dt><a class="reference internal" href="#comtrade.Comtrade.trigger_timestamp" title="comtrade.Comtrade.trigger_timestamp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trigger_timestamp</span></code></a></dt><dd><p>Return the trigger time stamp as a datetime object.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#comtrade.Comtrade.cfg_summary" title="comtrade.Comtrade.cfg_summary"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cfg_summary</span></code></a>()</p></td>
+<td><p>Returns the CFG attributes summary string.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#comtrade.Comtrade.load" title="comtrade.Comtrade.load"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load</span></code></a>(cfg_file[, dat_file])</p></td>
+<td><p>Load CFG, DAT, INF, and HDR files.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#comtrade.Comtrade.read" title="comtrade.Comtrade.read"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read</span></code></a>(cfg_lines, dat_lines)</p></td>
+<td><p>Read CFG and DAT files contents.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt id="comtrade.Comtrade.analog">
+<em class="property">property </em><code class="sig-name descname">analog</code><a class="headerlink" href="#comtrade.Comtrade.analog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the analog channel values bidimensional list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.analog_channel_ids">
+<em class="property">property </em><code class="sig-name descname">analog_channel_ids</code><a class="headerlink" href="#comtrade.Comtrade.analog_channel_ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the analog channels name list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.analog_count">
+<em class="property">property </em><code class="sig-name descname">analog_count</code><a class="headerlink" href="#comtrade.Comtrade.analog_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of analog channels.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.analog_phases">
+<em class="property">property </em><code class="sig-name descname">analog_phases</code><a class="headerlink" href="#comtrade.Comtrade.analog_phases" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the analog phase name list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.cfg">
+<em class="property">property </em><code class="sig-name descname">cfg</code><a class="headerlink" href="#comtrade.Comtrade.cfg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the underlying CFG class instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.cfg_summary">
+<code class="sig-name descname">cfg_summary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#comtrade.Comtrade.cfg_summary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the CFG attributes summary string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.channels_count">
+<em class="property">property </em><code class="sig-name descname">channels_count</code><a class="headerlink" href="#comtrade.Comtrade.channels_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of channels, total.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.digital">
+<em class="property">property </em><code class="sig-name descname">digital</code><a class="headerlink" href="#comtrade.Comtrade.digital" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the status channels bidimensional values list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.digital_channel_ids">
+<em class="property">property </em><code class="sig-name descname">digital_channel_ids</code><a class="headerlink" href="#comtrade.Comtrade.digital_channel_ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the status channels name list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.digital_count">
+<em class="property">property </em><code class="sig-name descname">digital_count</code><a class="headerlink" href="#comtrade.Comtrade.digital_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the number of status channels.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.frequency">
+<em class="property">property </em><code class="sig-name descname">frequency</code><a class="headerlink" href="#comtrade.Comtrade.frequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the measured line frequency in Hertz.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.ft">
+<em class="property">property </em><code class="sig-name descname">ft</code><a class="headerlink" href="#comtrade.Comtrade.ft" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the expected DAT file format.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.hdr">
+<em class="property">property </em><code class="sig-name descname">hdr</code><a class="headerlink" href="#comtrade.Comtrade.hdr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the HDR file contents.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.inf">
+<em class="property">property </em><code class="sig-name descname">inf</code><a class="headerlink" href="#comtrade.Comtrade.inf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the INF file contents.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cfg_file</span></em>, <em class="sig-param"><span class="n">dat_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#comtrade.Comtrade.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load CFG, DAT, INF, and HDR files. Each must be a FileIO or StringIO
+object. dat_file, inf_file, and hdr_file are optional (Default: None).</p>
+<p>cfg_file is the cfg file path, including its extension.
+dat_file is optional, and may be set if the DAT file name differs from</p>
+<blockquote>
+<div><p>the CFG file name.</p>
+</div></blockquote>
+<p>Keyword arguments:
+inf_file – optional INF file path (Default = None)
+hdr_file – optional HDR file path (Default = None)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.read">
+<code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cfg_lines</span></em>, <em class="sig-param"><span class="n">dat_lines</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#comtrade.Comtrade.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read CFG and DAT files contents. Expects FileIO or StringIO objects.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.rec_dev_id">
+<em class="property">property </em><code class="sig-name descname">rec_dev_id</code><a class="headerlink" href="#comtrade.Comtrade.rec_dev_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the recording device id.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.rev_year">
+<em class="property">property </em><code class="sig-name descname">rev_year</code><a class="headerlink" href="#comtrade.Comtrade.rev_year" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the COMTRADE revision year.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.start_timestamp">
+<em class="property">property </em><code class="sig-name descname">start_timestamp</code><a class="headerlink" href="#comtrade.Comtrade.start_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the recording start time stamp as a datetime object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.station_name">
+<em class="property">property </em><code class="sig-name descname">station_name</code><a class="headerlink" href="#comtrade.Comtrade.station_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the recording device’s station name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.status">
+<em class="property">property </em><code class="sig-name descname">status</code><a class="headerlink" href="#comtrade.Comtrade.status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the status channel values bidimensional list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.status_channel_ids">
+<em class="property">property </em><code class="sig-name descname">status_channel_ids</code><a class="headerlink" href="#comtrade.Comtrade.status_channel_ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the status channels name list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.status_count">
+<em class="property">property </em><code class="sig-name descname">status_count</code><a class="headerlink" href="#comtrade.Comtrade.status_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of status channels.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.status_phases">
+<em class="property">property </em><code class="sig-name descname">status_phases</code><a class="headerlink" href="#comtrade.Comtrade.status_phases" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the status phase name list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.time">
+<em class="property">property </em><code class="sig-name descname">time</code><a class="headerlink" href="#comtrade.Comtrade.time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the time values list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.time_base">
+<em class="property">property </em><code class="sig-name descname">time_base</code><a class="headerlink" href="#comtrade.Comtrade.time_base" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the time base.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.total_samples">
+<em class="property">property </em><code class="sig-name descname">total_samples</code><a class="headerlink" href="#comtrade.Comtrade.total_samples" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the total number of samples (per channel).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.trigger_time">
+<em class="property">property </em><code class="sig-name descname">trigger_time</code><a class="headerlink" href="#comtrade.Comtrade.trigger_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return relative trigger time in seconds.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="comtrade.Comtrade.trigger_timestamp">
+<em class="property">property </em><code class="sig-name descname">trigger_timestamp</code><a class="headerlink" href="#comtrade.Comtrade.trigger_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the trigger time stamp as a datetime object.</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="additional-package-functions">
+<h2>Additional Package Functions<a class="headerlink" href="#additional-package-functions" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="comtrade.fill_with_zeros_to_the_right">
+<code class="sig-prename descclassname">comtrade.</code><code class="sig-name descname">fill_with_zeros_to_the_right</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">number_str</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">width</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#comtrade.fill_with_zeros_to_the_right" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">API Reference</a><ul>
+<li><a class="reference internal" href="#additional-package-functions">Additional Package Functions</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/comtrade.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html">python-comtrade`</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">API Reference</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, David Rodrigues Parrini.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.3.1.
+    </div>
+  </body>
+</html>
